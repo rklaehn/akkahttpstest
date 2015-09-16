@@ -1,0 +1,57 @@
+satmonjavaservices/CoreLibScala/dist/CoreLibScala.jar
+satmonjavaservices/CoreLib/dist/CoreLib.jar
+*.pydevproject
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+*/.idea/workspace.xml
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+#IDEA?
+.cache
+/satmonjavaservices/ScosIDL/.idea/
+/satmonjavaservices/SatmonJavaServices/.idea/
+out/
+doc/
+.idea
+.idea_modules
+*.class
+
+#SBT
+target/
+
+#Eclipse
+.project
+.classpath
+.settings/
+.metadata
+
+#Binary executables (if you really want them in the repo, commit them manually!)
+*.jar
+*.exe
+*.dll
+*.pdf
+
+#ignore compile output from astro library
+astro/out/**
+astro/doc/**
+
+#proguard
+satmon.map
+smbutils.map
