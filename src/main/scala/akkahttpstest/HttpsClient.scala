@@ -13,7 +13,7 @@ object HttpsClient extends App {
   implicit val materializer = ActorMaterializer()
   import system._
 
-  Http().singleRequest(HttpRequest(uri = Uri("https://127.0.0.1:8081")), httpsContext = Some(DebugHttpsContexts.clientContext)).onComplete {
+  Http().singleRequest(HttpRequest(uri = Uri("https://127.0.0.1:8081")), httpsContext = Some(DebugHttpsContexts.trustfulClientContext)).onComplete {
     case Success(r) ⇒ println(r)
     case Failure(e) ⇒ e.printStackTrace()
   }
